@@ -12,6 +12,7 @@
 		B0BB5DF31FE61ED700854417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BB5DF11FE61ED700854417 /* Main.storyboard */; };
 		B0BB5DF51FE61ED700854417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BB5DF41FE61ED700854417 /* Assets.xcassets */; };
 		B0BB5DF81FE61ED700854417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BB5DF61FE61ED700854417 /* LaunchScreen.storyboard */; };
+		B0BB5E031FE621EE00854417 /* Cyphers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB5E021FE621EE00854417 /* Cyphers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B0BB5DF41FE61ED700854417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0BB5DF71FE61ED700854417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0BB5DF91FE61ED700854417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0BB5E021FE621EE00854417 /* Cyphers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cyphers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		B0BB5DEC1FE61ED700854417 /* SocialCypher */ = {
 			isa = PBXGroup;
 			children = (
+				B0BB5E011FE621DE00854417 /* Cyphers */,
 				B0BB5DED1FE61ED700854417 /* AppDelegate.swift */,
 				B0BB5DEF1FE61ED700854417 /* ViewController.swift */,
 				B0BB5DF11FE61ED700854417 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				B0BB5DF91FE61ED700854417 /* Info.plist */,
 			);
 			path = SocialCypher;
+			sourceTree = "<group>";
+		};
+		B0BB5E011FE621DE00854417 /* Cyphers */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB5E021FE621EE00854417 /* Cyphers.swift */,
+			);
+			path = Cyphers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0BB5E031FE621EE00854417 /* Cyphers.swift in Sources */,
 				B0BB5DF01FE61ED700854417 /* ViewController.swift in Sources */,
 				B0BB5DEE1FE61ED700854417 /* AppDelegate.swift in Sources */,
 			);

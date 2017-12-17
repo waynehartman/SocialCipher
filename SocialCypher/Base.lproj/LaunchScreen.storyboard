@@ -1,25 +1,111 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqT-sI-bue">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <!--Social Cypher-->
+        <scene sceneID="VBv-gO-EUO">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                <viewController id="XCW-Xh-0hh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTN-Nm-dcf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F2W-k2-fl7">
+                                <rect key="frame" x="0.0" y="106" width="187" height="561"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="XCW-Xh-0hh" id="dnO-nw-nkc"/>
+                                </connections>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-Fz-Kdb">
+                                <rect key="frame" x="188" y="106" width="187" height="561"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsZ-os-cat" userLabel="Separator">
+                                <rect key="frame" x="187.5" y="64" width="0.5" height="603"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="0.5" id="n2U-Wn-2jD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAI-VH-jUR" userLabel="Header">
+                                <rect key="frame" x="0.0" y="64" width="375" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="2XA-bP-yBg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J16-as-OZu" userLabel="Horizontal Separator">
+                                <rect key="frame" x="0.0" y="106" width="375" height="0.0"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="jI2-lE-N3Q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="LKM-0M-5Ev" firstAttribute="bottom" secondItem="LsZ-os-cat" secondAttribute="bottom" id="2BZ-xE-Fh4"/>
+                            <constraint firstItem="J16-as-OZu" firstAttribute="top" secondItem="FAI-VH-jUR" secondAttribute="bottom" id="5eb-bq-dsy"/>
+                            <constraint firstItem="FAI-VH-jUR" firstAttribute="leading" secondItem="LKM-0M-5Ev" secondAttribute="leading" id="9ev-bE-1Ui"/>
+                            <constraint firstItem="LKM-0M-5Ev" firstAttribute="bottom" secondItem="F2W-k2-fl7" secondAttribute="bottom" id="ATb-le-kmD"/>
+                            <constraint firstItem="kdi-Fz-Kdb" firstAttribute="leading" secondItem="LsZ-os-cat" secondAttribute="trailing" id="Dbd-8P-9Vh"/>
+                            <constraint firstItem="kdi-Fz-Kdb" firstAttribute="top" secondItem="F2W-k2-fl7" secondAttribute="top" id="GDQ-hW-icB"/>
+                            <constraint firstItem="LsZ-os-cat" firstAttribute="leading" secondItem="F2W-k2-fl7" secondAttribute="trailing" id="LFO-GO-ix8"/>
+                            <constraint firstItem="LKM-0M-5Ev" firstAttribute="bottom" secondItem="kdi-Fz-Kdb" secondAttribute="bottom" id="Op8-Fh-U77"/>
+                            <constraint firstItem="F2W-k2-fl7" firstAttribute="top" secondItem="FAI-VH-jUR" secondAttribute="bottom" id="S3p-85-CBQ"/>
+                            <constraint firstItem="J16-as-OZu" firstAttribute="trailing" secondItem="FAI-VH-jUR" secondAttribute="trailing" id="YtP-bX-xqN"/>
+                            <constraint firstItem="F2W-k2-fl7" firstAttribute="leading" secondItem="LKM-0M-5Ev" secondAttribute="leading" id="g1c-26-Cqj"/>
+                            <constraint firstItem="FAI-VH-jUR" firstAttribute="top" secondItem="LKM-0M-5Ev" secondAttribute="top" id="gva-MM-iVB"/>
+                            <constraint firstItem="J16-as-OZu" firstAttribute="leading" secondItem="FAI-VH-jUR" secondAttribute="leading" id="hri-Au-zcX"/>
+                            <constraint firstItem="LKM-0M-5Ev" firstAttribute="trailing" secondItem="FAI-VH-jUR" secondAttribute="trailing" id="mYK-Vx-2aY"/>
+                            <constraint firstItem="LKM-0M-5Ev" firstAttribute="trailing" secondItem="kdi-Fz-Kdb" secondAttribute="trailing" id="oxl-np-HAN"/>
+                            <constraint firstItem="LsZ-os-cat" firstAttribute="top" secondItem="LKM-0M-5Ev" secondAttribute="top" id="w1I-N6-Peg"/>
+                            <constraint firstItem="kdi-Fz-Kdb" firstAttribute="width" secondItem="F2W-k2-fl7" secondAttribute="width" id="xmd-hZ-l3e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LKM-0M-5Ev"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Social Cypher" id="gHf-ji-894"/>
+                    <connections>
+                        <outlet property="textInputView" destination="F2W-k2-fl7" id="bTi-ic-ZzW"/>
+                        <outlet property="textOutputView" destination="kdi-Fz-Kdb" id="dfz-xV-fmU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foe-QR-m7l" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="479.19999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FDp-Iq-MTz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sqT-sI-bue" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="nEQ-cJ-cWI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XCW-Xh-0hh" kind="relationship" relationship="rootViewController" id="SXF-dh-pK7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvR-5b-9ot" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506" y="134"/>
         </scene>
     </scenes>
 </document>
