@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B052B1B61FE8D33300482519 /* ExclusionExpressions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052B1B51FE8D33300482519 /* ExclusionExpressions.swift */; };
 		B0BB5DEE1FE61ED700854417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB5DED1FE61ED700854417 /* AppDelegate.swift */; };
 		B0BB5DF01FE61ED700854417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB5DEF1FE61ED700854417 /* ViewController.swift */; };
 		B0BB5DF31FE61ED700854417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BB5DF11FE61ED700854417 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B052B1B51FE8D33300482519 /* ExclusionExpressions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionExpressions.swift; sourceTree = "<group>"; };
 		B0BB5DEA1FE61ED700854417 /* SocialCypher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialCypher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BB5DED1FE61ED700854417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BB5DEF1FE61ED700854417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B0BB5E011FE621DE00854417 /* Cyphers */,
+				B052B1B51FE8D33300482519 /* ExclusionExpressions.swift */,
 				B0BB5DED1FE61ED700854417 /* AppDelegate.swift */,
 				B0BB5DEF1FE61ED700854417 /* ViewController.swift */,
 				B0BB5DF11FE61ED700854417 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			files = (
 				B0BB5E031FE621EE00854417 /* Cyphers.swift in Sources */,
 				B0BB5DF01FE61ED700854417 /* ViewController.swift in Sources */,
+				B052B1B61FE8D33300482519 /* ExclusionExpressions.swift in Sources */,
 				B0BB5DEE1FE61ED700854417 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,11 +293,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R937YBPA22;
 				INFOPLIST_FILE = SocialCypher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SocialCypher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +309,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R937YBPA22;
 				INFOPLIST_FILE = SocialCypher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SocialCypher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
