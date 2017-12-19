@@ -8,27 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		B052B1B61FE8D33300482519 /* ExclusionExpressions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052B1B51FE8D33300482519 /* ExclusionExpressions.swift */; };
+		B052B1CC1FE9552E00482519 /* SocialCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052B1CB1FE9552E00482519 /* SocialCipherTests.swift */; };
 		B0BB5DEE1FE61ED700854417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB5DED1FE61ED700854417 /* AppDelegate.swift */; };
 		B0BB5DF01FE61ED700854417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB5DEF1FE61ED700854417 /* ViewController.swift */; };
 		B0BB5DF31FE61ED700854417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BB5DF11FE61ED700854417 /* Main.storyboard */; };
 		B0BB5DF51FE61ED700854417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BB5DF41FE61ED700854417 /* Assets.xcassets */; };
 		B0BB5DF81FE61ED700854417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BB5DF61FE61ED700854417 /* LaunchScreen.storyboard */; };
-		B0BB5E031FE621EE00854417 /* Cyphers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB5E021FE621EE00854417 /* Cyphers.swift */; };
+		B0BB5E031FE621EE00854417 /* Ciphers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB5E021FE621EE00854417 /* Ciphers.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B052B1CE1FE9552E00482519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0BB5DE21FE61ED700854417 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0BB5DE91FE61ED700854417;
+			remoteInfo = SocialCypher;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B052B1B51FE8D33300482519 /* ExclusionExpressions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionExpressions.swift; sourceTree = "<group>"; };
-		B0BB5DEA1FE61ED700854417 /* SocialCypher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialCypher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B052B1C91FE9552E00482519 /* SocialCipherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialCipherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B052B1CB1FE9552E00482519 /* SocialCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialCipherTests.swift; sourceTree = "<group>"; };
+		B052B1CD1FE9552E00482519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0BB5DEA1FE61ED700854417 /* SocialCipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialCipher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BB5DED1FE61ED700854417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BB5DEF1FE61ED700854417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0BB5DF21FE61ED700854417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0BB5DF41FE61ED700854417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0BB5DF71FE61ED700854417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0BB5DF91FE61ED700854417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0BB5E021FE621EE00854417 /* Cyphers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cyphers.swift; sourceTree = "<group>"; };
+		B0BB5E021FE621EE00854417 /* Ciphers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ciphers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B052B1C61FE9552E00482519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0BB5DE71FE61ED700854417 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B052B1CA1FE9552E00482519 /* SocialCipherTests */ = {
+			isa = PBXGroup;
+			children = (
+				B052B1CB1FE9552E00482519 /* SocialCipherTests.swift */,
+				B052B1CD1FE9552E00482519 /* Info.plist */,
+			);
+			path = SocialCipherTests;
+			sourceTree = "<group>";
+		};
 		B0BB5DE11FE61ED700854417 = {
 			isa = PBXGroup;
 			children = (
-				B0BB5DEC1FE61ED700854417 /* SocialCypher */,
+				B0BB5DEC1FE61ED700854417 /* SocialCipher */,
+				B052B1CA1FE9552E00482519 /* SocialCipherTests */,
 				B0BB5DEB1FE61ED700854417 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,15 +81,16 @@
 		B0BB5DEB1FE61ED700854417 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0BB5DEA1FE61ED700854417 /* SocialCypher.app */,
+				B0BB5DEA1FE61ED700854417 /* SocialCipher.app */,
+				B052B1C91FE9552E00482519 /* SocialCipherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0BB5DEC1FE61ED700854417 /* SocialCypher */ = {
+		B0BB5DEC1FE61ED700854417 /* SocialCipher */ = {
 			isa = PBXGroup;
 			children = (
-				B0BB5E011FE621DE00854417 /* Cyphers */,
+				B0BB5E011FE621DE00854417 /* Ciphers */,
 				B052B1B51FE8D33300482519 /* ExclusionExpressions.swift */,
 				B0BB5DED1FE61ED700854417 /* AppDelegate.swift */,
 				B0BB5DEF1FE61ED700854417 /* ViewController.swift */,
@@ -67,23 +99,41 @@
 				B0BB5DF61FE61ED700854417 /* LaunchScreen.storyboard */,
 				B0BB5DF91FE61ED700854417 /* Info.plist */,
 			);
-			path = SocialCypher;
+			path = SocialCipher;
 			sourceTree = "<group>";
 		};
-		B0BB5E011FE621DE00854417 /* Cyphers */ = {
+		B0BB5E011FE621DE00854417 /* Ciphers */ = {
 			isa = PBXGroup;
 			children = (
-				B0BB5E021FE621EE00854417 /* Cyphers.swift */,
+				B0BB5E021FE621EE00854417 /* Ciphers.swift */,
 			);
-			path = Cyphers;
+			path = Ciphers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0BB5DE91FE61ED700854417 /* SocialCypher */ = {
+		B052B1C81FE9552E00482519 /* SocialCipherTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0BB5DFC1FE61ED700854417 /* Build configuration list for PBXNativeTarget "SocialCypher" */;
+			buildConfigurationList = B052B1D01FE9552E00482519 /* Build configuration list for PBXNativeTarget "SocialCipherTests" */;
+			buildPhases = (
+				B052B1C51FE9552E00482519 /* Sources */,
+				B052B1C61FE9552E00482519 /* Frameworks */,
+				B052B1C71FE9552E00482519 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B052B1CF1FE9552E00482519 /* PBXTargetDependency */,
+			);
+			name = SocialCipherTests;
+			productName = SocialCipherTests;
+			productReference = B052B1C91FE9552E00482519 /* SocialCipherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0BB5DE91FE61ED700854417 /* SocialCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0BB5DFC1FE61ED700854417 /* Build configuration list for PBXNativeTarget "SocialCipher" */;
 			buildPhases = (
 				B0BB5DE61FE61ED700854417 /* Sources */,
 				B0BB5DE71FE61ED700854417 /* Frameworks */,
@@ -93,9 +143,9 @@
 			);
 			dependencies = (
 			);
-			name = SocialCypher;
+			name = SocialCipher;
 			productName = SocialCypher;
-			productReference = B0BB5DEA1FE61ED700854417 /* SocialCypher.app */;
+			productReference = B0BB5DEA1FE61ED700854417 /* SocialCipher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,13 +158,18 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = WayneHartman;
 				TargetAttributes = {
+					B052B1C81FE9552E00482519 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B0BB5DE91FE61ED700854417;
+					};
 					B0BB5DE91FE61ED700854417 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = B0BB5DE51FE61ED700854417 /* Build configuration list for PBXProject "SocialCypher" */;
+			buildConfigurationList = B0BB5DE51FE61ED700854417 /* Build configuration list for PBXProject "SocialCipher" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,12 +182,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0BB5DE91FE61ED700854417 /* SocialCypher */,
+				B0BB5DE91FE61ED700854417 /* SocialCipher */,
+				B052B1C81FE9552E00482519 /* SocialCipherTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B052B1C71FE9552E00482519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0BB5DE81FE61ED700854417 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,11 +209,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B052B1C51FE9552E00482519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B052B1CC1FE9552E00482519 /* SocialCipherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0BB5DE61FE61ED700854417 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0BB5E031FE621EE00854417 /* Cyphers.swift in Sources */,
+				B0BB5E031FE621EE00854417 /* Ciphers.swift in Sources */,
 				B0BB5DF01FE61ED700854417 /* ViewController.swift in Sources */,
 				B052B1B61FE8D33300482519 /* ExclusionExpressions.swift in Sources */,
 				B0BB5DEE1FE61ED700854417 /* AppDelegate.swift in Sources */,
@@ -158,6 +229,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B052B1CF1FE9552E00482519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0BB5DE91FE61ED700854417 /* SocialCipher */;
+			targetProxy = B052B1CE1FE9552E00482519 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B0BB5DF11FE61ED700854417 /* Main.storyboard */ = {
@@ -179,6 +258,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B052B1D11FE9552E00482519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R937YBPA22;
+				INFOPLIST_FILE = SocialCipherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SocialCipherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialCipher.app/SocialCipher";
+			};
+			name = Debug;
+		};
+		B052B1D21FE9552E00482519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R937YBPA22;
+				INFOPLIST_FILE = SocialCipherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SocialCipherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialCipher.app/SocialCipher";
+			};
+			name = Release;
+		};
 		B0BB5DFA1FE61ED700854417 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R937YBPA22;
-				INFOPLIST_FILE = SocialCypher/Info.plist;
+				INFOPLIST_FILE = SocialCipher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SocialCypher;
@@ -308,7 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R937YBPA22;
-				INFOPLIST_FILE = SocialCypher/Info.plist;
+				INFOPLIST_FILE = SocialCipher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SocialCypher;
@@ -321,7 +432,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0BB5DE51FE61ED700854417 /* Build configuration list for PBXProject "SocialCypher" */ = {
+		B052B1D01FE9552E00482519 /* Build configuration list for PBXNativeTarget "SocialCipherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B052B1D11FE9552E00482519 /* Debug */,
+				B052B1D21FE9552E00482519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0BB5DE51FE61ED700854417 /* Build configuration list for PBXProject "SocialCipher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0BB5DFA1FE61ED700854417 /* Debug */,
@@ -330,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0BB5DFC1FE61ED700854417 /* Build configuration list for PBXNativeTarget "SocialCypher" */ = {
+		B0BB5DFC1FE61ED700854417 /* Build configuration list for PBXNativeTarget "SocialCipher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0BB5DFD1FE61ED700854417 /* Debug */,

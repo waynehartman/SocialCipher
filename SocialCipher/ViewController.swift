@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SocialCypher
+//  SocialCipher
 //
 //  Created by Wayne Hartman on 12/16/17.
 //  Copyright © 2017 WayneHartman. All rights reserved.
@@ -17,7 +17,7 @@ internal class ViewController: UIViewController {
     @IBOutlet fileprivate var hairLineConstraints: [NSLayoutConstraint]!
 
     private let maxChars = 280
-    private let cypher: Cypher = ROT13Cypher()
+    private let cipher: Cipher = ROT13Cipher()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ extension ViewController {
     }
     
     fileprivate func encode(text: String) {
-        let encodedText = self.cypher.encode(forString: text)
+        let encodedText = self.cipher.encode(forString: text)
         self.textOutputView.text = encodedText
     }
 }

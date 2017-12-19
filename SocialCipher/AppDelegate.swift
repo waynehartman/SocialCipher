@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SocialCypher
+//  SocialCipher
 //
 //  Created by Wayne Hartman on 12/16/17.
 //  Copyright © 2017 WayneHartman. All rights reserved.

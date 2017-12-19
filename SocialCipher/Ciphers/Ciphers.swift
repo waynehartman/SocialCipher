@@ -1,6 +1,6 @@
 //
-//  Cyphers.swift
-//  SocialCypher
+//  Ciphers.swift
+//  SocialCipher
 //
 //  Created by Wayne Hartman on 12/16/17.
 //  Copyright © 2017 WayneHartman. All rights reserved.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-internal protocol Cypher {
+internal protocol Cipher {
     func encode(forString string: String) -> String
 }
 
-internal struct ROT13Cypher : Cypher {
+internal struct ROT13Cipher : Cipher {
     fileprivate let exclusionExpressions: [NSRegularExpression]
     fileprivate var rot13Mapped = [Character:Character]()
     fileprivate let uppercase = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
