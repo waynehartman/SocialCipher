@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B052B1B61FE8D33300482519 /* ExclusionExpressions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052B1B51FE8D33300482519 /* ExclusionExpressions.swift */; };
 		B052B1CC1FE9552E00482519 /* SocialCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052B1CB1FE9552E00482519 /* SocialCipherTests.swift */; };
+		B052B1D51FE9638700482519 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052B1D41FE9638700482519 /* SettingsViewController.swift */; };
+		B052B1D71FE9A6B500482519 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052B1D61FE9A6B500482519 /* Settings.swift */; };
 		B0BB5DEE1FE61ED700854417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB5DED1FE61ED700854417 /* AppDelegate.swift */; };
 		B0BB5DF01FE61ED700854417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB5DEF1FE61ED700854417 /* ViewController.swift */; };
 		B0BB5DF31FE61ED700854417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BB5DF11FE61ED700854417 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		B052B1C91FE9552E00482519 /* SocialCipherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialCipherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B052B1CB1FE9552E00482519 /* SocialCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialCipherTests.swift; sourceTree = "<group>"; };
 		B052B1CD1FE9552E00482519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B052B1D41FE9638700482519 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B052B1D61FE9A6B500482519 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		B0BB5DEA1FE61ED700854417 /* SocialCipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialCipher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BB5DED1FE61ED700854417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BB5DEF1FE61ED700854417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 			path = SocialCipherTests;
 			sourceTree = "<group>";
 		};
+		B052B1D31FE9634C00482519 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B052B1D41FE9638700482519 /* SettingsViewController.swift */,
+				B052B1D61FE9A6B500482519 /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		B0BB5DE11FE61ED700854417 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B0BB5E011FE621DE00854417 /* Ciphers */,
+				B052B1D31FE9634C00482519 /* Settings */,
 				B052B1B51FE8D33300482519 /* ExclusionExpressions.swift */,
 				B0BB5DED1FE61ED700854417 /* AppDelegate.swift */,
 				B0BB5DEF1FE61ED700854417 /* ViewController.swift */,
@@ -221,9 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B052B1D71FE9A6B500482519 /* Settings.swift in Sources */,
 				B0BB5E031FE621EE00854417 /* Ciphers.swift in Sources */,
 				B0BB5DF01FE61ED700854417 /* ViewController.swift in Sources */,
 				B052B1B61FE8D33300482519 /* ExclusionExpressions.swift in Sources */,
+				B052B1D51FE9638700482519 /* SettingsViewController.swift in Sources */,
 				B0BB5DEE1FE61ED700854417 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,7 @@ internal class ViewController: UIViewController {
     @IBOutlet fileprivate var hairLineConstraints: [NSLayoutConstraint]!
 
     private let maxChars = 280
-    private let cipher: Cipher = ROT13Cipher()
+    private var cipher: Cipher = ROT13Cipher(exclusionExpressions: [.username, .hashtag, .url])
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +25,47 @@ internal class ViewController: UIViewController {
         self.setupNotifications()
         self.updateCountdown()
         self.updateButtons()
-        
+
         for constraint in self.hairLineConstraints {
             constraint.constant = 1.0 / UIScreen.main.scale
         }
+
+        self.cipher = ROT13Cipher(exclusionExpressions: self.fetchCipherOptions())
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        weak var weakSelf = self
+        
+        if let settingsVC = segue.destination as? SettingsViewController {
+            settingsVC.changeHandler = {
+                guard let weakSelf = weakSelf else {
+                    return
+                }
+
+                weakSelf.cipher = ROT13Cipher(exclusionExpressions: weakSelf.fetchCipherOptions())
+                weakSelf.textViewDidChange(weakSelf.textInputView)
+            }
+        }
+    }
+    
+    fileprivate func fetchCipherOptions() -> [ExlusionExpressions] {
+        var expressions = [ExlusionExpressions]()
+
+        let settings = Settings()
+
+        if settings.excludeHashtag {
+            expressions.append(.hashtag)
+        }
+
+        if settings.excludeURL {
+            expressions.append(.url)
+        }
+
+        if settings.excludeUsername {
+            expressions.append(.username)
+        }
+
+        return expressions
     }
 }
 

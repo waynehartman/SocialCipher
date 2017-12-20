@@ -9,6 +9,7 @@
 import UIKit
 
 internal protocol Cipher {
+    init(exclusionExpressions: [ExlusionExpressions])
     func encode(forString string: String) -> String
 }
 
@@ -18,12 +19,15 @@ internal struct ROT13Cipher : Cipher {
     fileprivate let uppercase = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     fileprivate let lowercase = Array("abcdefghijklmnopqrstuvwxyz")
 
-    internal init() {
-        self.exclusionExpressions = [
-            try! NSRegularExpression(pattern: ExlusionExpressions.username.rawValue, options: []),
-            try! NSRegularExpression(pattern: ExlusionExpressions.hashtag.rawValue, options: []),
-            try! NSRegularExpression(pattern: ExlusionExpressions.url.rawValue, options: [])
-        ]
+    internal init(exclusionExpressions: [ExlusionExpressions]) {
+        var regex = [NSRegularExpression]()
+        
+        for expression in exclusionExpressions {
+            let regexp = try! NSRegularExpression(pattern: expression.rawValue, options: [])
+            regex.append(regexp)
+        }
+
+        self.exclusionExpressions = regex
 
         for (index, _) in uppercase.enumerated() {
             rot13Mapped[uppercase[index]] = uppercase[(index + 13) % 26]
@@ -42,13 +46,11 @@ internal struct ROT13Cipher : Cipher {
             }
         }
 
-        let transformation = string.enumerated().map { (arg) -> Character in
-            let (index, char) = arg
-
-            if indexSet.contains(index) {
-                return char
+        let transformation = string.enumerated().map { (enumeratedChar) -> Character in
+            if indexSet.contains(enumeratedChar.offset) {
+                return enumeratedChar.element
             } else {
-                return rot13Mapped[char] ?? char
+                return rot13Mapped[enumeratedChar.element] ?? enumeratedChar.element
             }
         }
 
